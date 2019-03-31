@@ -153,8 +153,8 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="LDAP database files" Target="/var/lib/ldap/" Default="" Mode="rw" Description="LDAP database files" Type="Path" Display="always" Required="false" Mask="false"/>
-  <Config Name="LDAP config files" Target="/etc/ldap/slapd.d/" Default="" Mode="rw" Description="LDAP config files" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="LDAP database files" Target="/var/lib/ldap/" Default="/mnt/user/appdata/OpenLDAP/database/" Mode="rw" Description="LDAP database files" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="LDAP config files" Target="/etc/ldap/slapd.d/" Default="/mnt/user/appdata/OpenLDAP/config/" Mode="rw" Description="LDAP config files" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="Host Port 1" Target="389" Default="" Mode="tcp" Description="Container Port: 389" Type="Port" Display="always" Required="false" Mask="false">389</Config>
   <Config Name="Host Port 2" Target="636" Default="" Mode="tcp" Description="Container Port: 636" Type="Port" Display="always" Required="false" Mask="false">636</Config>
   <Config Name="LDAP_ORGANISATION" Target="LDAP_ORGANISATION" Default="" Mode="" Description="Organisation name. Defaults to Example Inc." Type="Variable" Display="always" Required="false" Mask="false"/>
